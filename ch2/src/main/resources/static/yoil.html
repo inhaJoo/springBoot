@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+  <a href="http://localhost:8080/getYoil?year=2022&month=7&day=19">"요일을 알고 싶으면 클릭!!!"</a>
+</p>
+<p>
+<!--
+    method
+    get : 파라미터를 URL 통해서 전달(default)
+    post : 파라미터를 서버 안에서 전달
+
+    데이터 전달방법
+    1. URL 직접입력
+    2. <a> 태그
+    3. <form> 태그 - action 어디로 보낼지 주소 적는 곳, 안 적을시 자기자신에게 전송
+-->
+  <form action="http://localhost:8080/getYoil" method="post">
+    <input type="text" name="year">년</br>
+    <input type="text" name="month">월</br>
+    <input type="text" name="day">일</br>
+    <input type="submit">
+  </form>
+</p>
+</body>
+</html>
